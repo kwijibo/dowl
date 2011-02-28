@@ -57,8 +57,8 @@
 	   			<div class="term" id="class_<%= t[1].short_name %>">	   			
 	   				<h4>Class: <%= t[1].short_name %></h4>
 	   				<table>
-	   				<tr><td class="label">Label</td><td><%= t[1].label %> </ts></tr>
-	   				<tr><td class="label">Status</td><td><%= t[1].status %> </ts></tr>
+	   				<tr><td class="label">Label</td><td><%= t[1].label %> </td></tr>
+	   				<tr><td class="label">Status</td><td><%= t[1].status %> </td></tr>
 	   				<% if t[1].sub_class_of %>
 	   					<% if t[1].sub_class_of.class.to_s == "String" %>	   				
 	   						<tr><td class="label">Has Parent Class</td><td><a href="<%= t[1].sub_class_of %>"><%= t[1].sub_class_of %></a></td></tr>
@@ -98,8 +98,8 @@
 	   			<div class="term" id="prop_<%= t[1].short_name %>">
 	   				<h4>Property: <%= t[1].short_name %></h4>
 	   				<table>
-	   					<tr><td class="label">Label</td><td><%= t[1].label %> </ts></tr>
-		   				<tr><td class="label">Status</td><td><%= t[1].status %> </ts></tr>
+	   					<tr><td class="label">Label</td><td><%= t[1].label %> </td></tr>
+		   				<tr><td class="label">Status</td><td><%= t[1].status %> </td></tr>
 		   				<% if t[1].sub_property_of %>
 		   					<% if t[1].sub_property_of.class.to_s == "String" %>	   				
 		   						<tr><td class="label">Has Parent Property</td><td><a href="<%= t[1].sub_property_of %>"><%= t[1].sub_property_of %></a></td></tr>
@@ -163,8 +163,8 @@
 	   			<div class="term" id="prop_<%= t[1].short_name %>">
 	   				<h4>Property: <%= t[1].short_name %></h4>
 	   				<table>
-						<tr><td class="label">Label</td><td><%= t[1].label %> </ts></tr>	   				
-		   				<tr><td class="label">Status</td><td><%= t[1].status %> </ts></tr>
+						<tr><td class="label">Label</td><td><%= t[1].label %> </td></tr>	   				
+		   				<tr><td class="label">Status</td><td><%= t[1].status %> </td></tr>
 		   				<% if t[1].sub_property_of %>
 		   					<% if t[1].sub_property_of.class.to_s == "String" %>	   				
 		   						<tr><td class="label">Has Parent Property</td><td><a href="<%= t[1].sub_property_of %>"><%= t[1].sub_property_of %></a></td></tr>
